@@ -41,9 +41,6 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passw
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
-# Add luci-app-ssr-plus
-svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
-rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
 
 # Add p7zip
 svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
